@@ -93,8 +93,7 @@ body {
   margin: 0;
 }
 
-header,
-footer {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +169,10 @@ footer .social p {
 
 }
 
+.copyright {
+  text-align: center;
+}
+
 /*--------------- Homepage Styles ----------------*/
 
 .hero-area {
@@ -194,6 +197,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   padding: 50px 0;
 }
 
@@ -205,7 +209,7 @@ aside {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 
 
@@ -218,8 +222,6 @@ aside {
   flex-flow: row wrap;
   padding: 50px 0;
 }
-
-
 
 .reviews h3 {
   width: 45%;
@@ -368,10 +370,13 @@ aside {
   }
 
   .features article {
-    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
   }
-  .features .features-items {
-    justify-content: space-around;
+  .features .features-item-description {
+    flex-basis: 50%;
   }
 
   .reviews h2 {
@@ -381,11 +386,16 @@ aside {
     width: 40%;
   }
 
-  .footer-content {
-    flex-flow: row wrap;
-    justify-content: space-around;
+  footer .content-wrapper {
     flex-basis: 65%;
   }
+
+  .footer-content {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
 /* About Page Styles Here */
 
@@ -427,6 +437,41 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles Here*/
+
+  .content-wrapper {
+    width: 80%;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 67%;
+  }
+
+  .form-description,
+  .form {
+    width: 27%;
+    flex-flow: row wrap;
+  }
+
+  .features-items article {
+    flex-basis: 23%;
+    padding: 25px 50px;
+  }
+
+  /* About Page Styles Here */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 95%;
+  }
+
+  /*FAQ Styles here*/
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 @media print,
