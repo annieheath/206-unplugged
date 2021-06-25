@@ -86,22 +86,68 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*--------------- Global Styles ----------------*/
 
-/*--------------- Base Header - Footer Styles ----------------*/
+html {
+    font-size: 16px;
+}
 
 body {
-  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+
 }
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+  text-align: center;
+}
+
+.content-wrapper {
+  width: 90%;
+}
+
+/*--------------- Base Header - Footer Styles ----------------*/
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.content-wrapper {
-  width: 90%;
 }
 
 header .content-wrapper {
@@ -138,7 +184,6 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  list-style: none;
   padding: 0;
 }
 
@@ -355,7 +400,7 @@ aside {
 @media only screen and (min-width: 768px) {
   /* Tablet Styles Here*/
 
-  /* Homepage Styles Here */
+  /* -----Homepage Styles---- */
   header .content-wrapper {
     width: 85%;
     flex-flow: nowrap;
@@ -397,7 +442,7 @@ aside {
   }
 
 
-/* About Page Styles Here */
+/* ----About Page Styles ---- */
 
   .mission-content {
       display: flex;
@@ -419,7 +464,7 @@ aside {
     align-items: center;
   }
 
-  /*FAQ Styles here*/
+  /*------FAQ Styles -----*/
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -460,14 +505,14 @@ aside {
     padding: 25px 50px;
   }
 
-  /* About Page Styles Here */
+  /* ------About Page Styles ------ */
 
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
   }
 
-  /*FAQ Styles here*/
+  /*-----FAQ Styles ----*/
 
   .faq h2 {
     width: 100%;
