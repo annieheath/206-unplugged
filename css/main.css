@@ -95,6 +95,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul,
@@ -135,7 +136,7 @@ address {
 }
 
 .content-wrapper {
-  outline: 3px dotted red;
+  /* outline: 3px dotted red; */
   width: 90%;
   margin: 50px 0;
 }
@@ -146,6 +147,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -160,6 +162,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 header nav {
@@ -169,6 +172,13 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
+}
+
+header nav ul li {
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: bold;
 }
 
 footer {
@@ -176,6 +186,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer p {
@@ -214,14 +225,43 @@ footer .copyright {
   justify-content: center;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+}
+
 /* Aside */
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 aside .form-description {
   margin-bottom: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -251,6 +291,7 @@ aside .form-description {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -258,10 +299,12 @@ aside .form-description {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -276,11 +319,13 @@ aside .form-description {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -294,6 +339,7 @@ aside .form-description {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -306,10 +352,15 @@ aside .form-description {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 24px;
 }
 
 /* ==========================================================================
