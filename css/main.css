@@ -625,6 +625,19 @@ input[type="button"] {
 @media only screen and (min-width: 1200px) {
   /* Desktop Media Query */
   /* Global Styles */
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
   .content-wrapper {
     max-width: 960px;
   }
@@ -637,6 +650,7 @@ input[type="button"] {
   /* Hero */
   .hero-area h1 {
     width: 70%;
+    font-size: 3.75em;
   }
 
   /* Aside */
@@ -668,12 +682,18 @@ input[type="button"] {
    ========================================================================== */
   .mission h2 {
     width: 90%;
+    font-size: 3em;
   }
   /* ==========================================================================
    FAQ Page
    ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+  .faq h4 {
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
 
