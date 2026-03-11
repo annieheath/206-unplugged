@@ -118,7 +118,7 @@ h2 {
 
 h3,
 h4 {
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.125em;
   font-weight: 500;
   margin: 20px 0;
@@ -347,6 +347,10 @@ input[type="button"] {
   justify-content: center;
   background-color: #527158;
 }
+
+.mission-content h2 {
+  margin-top: 0;
+}
 /* 
 .map figure {
   width: 100%;
@@ -393,6 +397,7 @@ input[type="button"] {
 }
 
 .faq h2 {
+  margin-top: 0;
   margin-bottom: 40px;
   line-height: 1;
 }
