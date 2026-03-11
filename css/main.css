@@ -87,6 +87,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* --------Global Styles-------- */
+/*
+Source - https://stackoverflow.com/a/28860708
+Posted by B Cronyn, modified by community. See post 'Timeline' for change history
+Retrieved 2026-03-11, License - CC BY-SA 4.0
+*/
+
+/* * {
+  border: 1px solid red !important;
+} */
 
 html {
   font-size: 1rem;
@@ -95,7 +104,8 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: #e2e3ed;
+  /* color: #e2e3ed; */
+  color: #e9eaf1;
 }
 
 ul,
@@ -110,17 +120,21 @@ a {
   text-decoration: none;
 }
 
+.mission h1,
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.875em;
   font-weight: 500;
+  font-size: 1.875em;
+  margin: 0;
 }
 
+.form-description h2,
+.faq h2,
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.125em;
   font-weight: 500;
+  font-size: 1.125em;
   margin: 20px 0;
 }
 
@@ -268,6 +282,7 @@ input[type="text"] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  margin-top: 10px;
 }
 
 input[type="button"] {
@@ -396,7 +411,7 @@ input[type="button"] {
   margin: 50px 0 0 0;
 }
 
-.faq h2 {
+.faq h1 {
   margin-top: 0;
   margin-bottom: 40px;
   line-height: 1;
@@ -406,6 +421,7 @@ input[type="button"] {
   margin-bottom: 50px;
 }
 
+.faq-content h2,
 .faq-content h4 {
   line-height: 1.333;
 }
@@ -501,10 +517,13 @@ input[type="button"] {
 @media only screen and (min-width: 768px) {
   /* Tablet Media Query */
   /* Global Styles */
+  .mission h1,
+  .faq h1,
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
   }
+  .form-description h2,
   h3 {
     font-size: 1.5em;
     line-height: 1.25;
@@ -557,6 +576,7 @@ input[type="button"] {
     justify-content: space-between;
     align-content: flex-start;
     margin: 50px 0;
+    align-items: center;
   }
 
   aside .content-wrapper .form-description,
@@ -611,6 +631,7 @@ input[type="button"] {
     width: 65%;
   }
 
+  footer h3,
   footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
@@ -659,7 +680,8 @@ input[type="button"] {
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
-  .contact-section h4 {
+  .contact-content h3,
+  .contact-content h4 {
     font-size: 1.5em;
   }
   .contact-content {
@@ -678,12 +700,14 @@ input[type="button"] {
     flex-basis: 45%;
   }
 
+  .faq h1,
   .faq h2 {
     width: 100%;
   }
 
+  .faq h2,
   .faq h4,
-  p {
+  .faq p {
     font-size: 0.875em;
     line-height: 1.125;
   }
@@ -696,6 +720,7 @@ input[type="button"] {
     font-size: 2.25em;
   }
 
+  .form-description h2,
   h3,
   h4 {
     font-size: 1.875em;
@@ -744,21 +769,35 @@ input[type="button"] {
     width: 42%;
   }
 
+  footer h3,
+  footer h4 {
+    font-size: 1.875em;
+  }
+
   /* ==========================================================================
    About Page
    ========================================================================== */
-  .mission h2 {
+  .mission h2,
+  .mission h2,
+  .contact-section .content-wrapper h2 {
     width: 90%;
     font-size: 3em;
+  }
+  .contact-content h3,
+  .contact-content h4 {
+    font-size: 1.875em;
   }
   /* ==========================================================================
    FAQ Page
    ========================================================================== */
-  .faq h2 {
+  /* .faq h2 {
     width: 100%;
     font-size: 3em;
-  }
-  .faq h4 {
+  } */
+
+  .faq h2,
+  .faq h4,
+  .faq p {
     font-size: 1.125em;
     line-height: 1;
   }
