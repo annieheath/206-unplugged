@@ -796,6 +796,9 @@ input[type="button"] {
     font-size: 3em;
   } */
 
+  .faq .content-wrapper {
+    margin: 155px 0;
+  }
   .faq h2,
   .faq h4,
   .faq p {
